@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  Switch,
+  Route,
+} from "react-router-dom";
+import Home from './pages/Home';
+import NavBar from './components/NavBar';
+import Todo from './pages/Todo';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar/>
+      <Switch>
+        <Route exact path="/">
+          <Home/>
+        </Route>
+        <Route path={"/todo/:id"} >
+          <Todo/>
+        </Route>
+
+      </Switch>
+      <h5 className='text-center mt-5 p-3' style={{background:"#1111"}}  >Thistine.</h5>
     </div>
   );
 }
