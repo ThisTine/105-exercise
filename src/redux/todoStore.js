@@ -52,7 +52,6 @@ const todo = createSlice({
             Thanks for watching!💖 Don't forget to SUBSCRIBE, Like and Share my video if you enjoy it.
             Have a wonderful day!
             📧 CONTACT US: herrkulti@gmail.com
-            🔔 Turn on notifications to stay updated with new upload!
             🚫 If you have any problem with copyright issues, please CONTACT US DIRECTLY before doing anything, or question please write to me in email.`}
             
         ]
